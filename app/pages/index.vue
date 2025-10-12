@@ -3,8 +3,9 @@ import Footer from '~/components/Footer.vue';
 import HeroSection from '~/components/home-screen/HeroSection.vue';
 import WelcomeSection from '~/components/home-screen/WelcomeSection.vue';
 import WhyChooseUsSection from '~/components/home-screen/WhyChooseUsSection.vue';
-
+import CTASection from '~/components/home-screen/CTASection.vue';
 import NavigationBar from '~/components/NavigationBar.vue';
+import SpecialistsSection from '~/components/home-screen/SpecialistsSection.vue';
 </script>
 
 <template>
@@ -13,6 +14,8 @@ import NavigationBar from '~/components/NavigationBar.vue';
     <HeroSection />
     <WelcomeSection />
     <WhyChooseUsSection />
+    <CTASection />
+    <SpecialistsSection />
     <Footer />
   </div>
 </template>
