@@ -1,10 +1,12 @@
+<script setup>
+import ServicesSection from '~/components/home-screen/ServicesSection.vue';
+</script>
+
 <template>
   <div
-    class="relative flex flex-col lg:flex-row items-center min-h-screen px-4 sm:px-6 lg:px-8"
+    class="relative flex flex-col lg:flex-row items-center min-h-screen px-4 sm:px-6 lg:px-8 py-0 pb-0"
   >
-    <div
-      class="relative z-10 text-left w-full  mt-8 lg:mt-0"
-    >
+    <div class="relative z-10 text-left w-full mt-8 lg:mt-0">
       <h1
         class="text-deep-blue font-semibold text-3xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight mb-4 lg:mb-5"
       >
@@ -14,8 +16,7 @@
       <p
         class="text-base lg:text-lg mb-6 text-deep-blue font-regular leading-relaxed"
       >
-        We use only the best quality materials on the market
-        in order to
+        We use only the best quality materials on the market in order to
         <br class="hidden lg:block" />
         provide the best products to our patients, So don't worry about
         <br class="hidden lg:block" />anything and book yourself.
@@ -66,10 +67,10 @@
               class="w-10 h-10 lg:w-12 lg:h-12 rounded-full object-cover flex-shrink-0"
             />
             <div>
-              <h3 class="text-gray-900 font-semibold text-sm lg:text-base">
+              <h3 class="text-primary font-semibold text-sm lg:text-base">
                 Thomas Daniel
               </h3>
-              <p class="text-gray-500 text-xs lg:text-sm">Sr Dental</p>
+              <p class="text-primary text-xs lg:text-sm">Sr Dental</p>
             </div>
           </div>
           <img
@@ -79,7 +80,7 @@
           />
         </div>
 
-        <p class="text-gray-600 text-xs lg:text-sm leading-snug">
+        <p class="text-primary text-xs lg:text-sm leading-snug">
           Top quality dental treatment done by field experts, highly recommended
           for everyone.
         </p>
@@ -97,4 +98,5 @@
       />
     </div>
   </div>
+  <ServicesSection />
 </template>
