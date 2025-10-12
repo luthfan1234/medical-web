@@ -1,27 +1,31 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2025-05-15",
+  compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   future: {
     compatibilityVersion: 4,
   },
 
   modules: [
-    "@nuxt/eslint",
-    "@nuxt/fonts",
-    "@nuxt/icon",
-    "@nuxt/image",
-    "@nuxt/scripts",
-    "@nuxt/test-utils",
-    "shadcn-nuxt",
+    '@nuxt/eslint',
+    '@nuxt/fonts',
+    '@nuxt/icon',
+    '@nuxt/image',
+    '@nuxt/scripts',
+    '@nuxt/test-utils',
+    'shadcn-nuxt',
   ],
 
-  css: ["~/assets/css/tailwind.css"],
+  css: ['~/assets/css/tailwind.css'],
 
   vite: {
     plugins: [tailwindcss()],
+  },
+
+  devServer: {
+    port: 5173,
   },
 
   shadcn: {
@@ -33,6 +37,6 @@ export default defineNuxtConfig({
      * Directory that the component lives in.
      * @default "./components/ui"
      */
-    componentDir: './app/components/ui'
-  }
+    componentDir: './app/components/ui',
+  },
 });
