@@ -3,9 +3,7 @@ import ServicesSection from '~/components/home-screen/ServicesSection.vue';
 </script>
 
 <template>
-  <div
-    class="relative flex flex-col lg:flex-row items-center mt-18 mb-12 px-4 sm:px-6 lg:px-8 py-0 pb-0"
-  >
+  <div class="relative flex flex-col lg:flex-row items-center mt-18 mb-12">
     <div class="relative z-10 text-left w-full mt-8 lg:mt-0">
       <h1
         class="text-deep-blue font-semibold text-3xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight mb-4 lg:mb-5"
