@@ -4,7 +4,7 @@
     <div class="flex items-center justify-between">
       <RouterLink to="/">
         <img
-          src="../assets/images/logo.svg"
+          src="@/assets/images/logo.svg"
           class="w-24 h-24"
           alt="todo list logo"
         />
@@ -26,30 +26,30 @@
       <div class="flex items-center space-x-4">
         <a href="#">
           <img
-            src="../assets/icon/facebook.svg"
+            src="@/assets/icon/facebook.svg"
             alt="Facebook"
             class="w-8 h-8"
           />
         </a>
         <a href="#">
           <img
-            src="../assets/icon/instagram.svg"
+            src="@/assets/icon/instagram.svg"
             alt="Instagram"
             class="w-8 h-8"
           />
         </a>
         <a href="#">
-          <img src="../assets/icon/youtube.svg" alt="YouTube" class="w-8 h-8" />
+          <img src="@/assets/icon/youtube.svg" alt="YouTube" class="w-8 h-8" />
         </a>
         <a href="#">
           <img
-            src="../assets/icon/linkedin.svg"
+            src="@/assets/icon/linkedin.svg"
             alt="LinkedIn"
             class="w-8 h-8"
           />
         </a>
         <a href="#">
-          <img src="../assets/icon/twitter.svg" alt="Twitter" class="w-8 h-8" />
+          <img src="@/assets/icon/twitter.svg" alt="Twitter" class="w-8 h-8" />
         </a>
       </div>
     </div>
