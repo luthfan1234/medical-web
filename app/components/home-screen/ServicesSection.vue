@@ -33,7 +33,7 @@ import CardDescription from '@/components/ui/card/CardDescription.vue';
             class="mb-4 text-primary font-medium flex items-center justify-center gap-2 hover:underline"
           >
             <span>Learn More</span>
-            <Icon name="lucide:arrow-right" class="w-4 h-4" />
+            <Icon name="lucide:circle-arrow-right" class="w-4 h-4" />
           </button>
         </Card>
         <!-- Service 2 -->
@@ -61,7 +61,7 @@ import CardDescription from '@/components/ui/card/CardDescription.vue';
             class="mb-4 text-primary font-medium flex items-center justify-center gap-2 hover:underline"
           >
             <span>Learn More</span>
-            <Icon name="lucide:arrow-right" class="w-4 h-4" />
+            <Icon name="lucide:circle-arrow-right" class="w-4 h-4" />
           </button>
         </Card>
         <!-- Service 3 -->

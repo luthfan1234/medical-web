@@ -92,6 +92,7 @@
   --color-soft-blue: var(--soft-blue);
   --color-deep-blue: var(--deep-blue);
   --color-bright-blue: var(--bright-blue);
+  --color-sky-blue: var(--sky-blue);
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
   --font-general: 'GeneralSans', sans-serif;
@@ -152,6 +153,7 @@
   --soft-blue: #e6f6fe;
   --deep-blue: #011632;
   --bright-blue: #1376f8;
+  --sky-blue: #25b4f8;
   --font-general: 'GeneralSans', sans-serif;
 }
 

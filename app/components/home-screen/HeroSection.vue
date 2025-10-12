@@ -25,7 +25,7 @@ import ServicesSection from '~/components/home-screen/ServicesSection.vue';
         class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-7 mb-8 lg:mb-12"
       >
         <button
-          class="w-full sm:w-auto btn btn-primary px-6 lg:px-7 py-3 lg:py-4 bg-bright-blue text-white rounded-lg font-semibold"
+          class="w-full sm:w-auto btn btn-primary px-6 lg:px-7 py-3 lg:py-4 bg-bright-blue text-white rounded-lg font-semibold hover:bg-deep-blue hover:text-white"
         >
           Book an appointment
         </button>
