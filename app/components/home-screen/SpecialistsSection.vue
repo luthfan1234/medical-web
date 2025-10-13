@@ -62,12 +62,12 @@ const specialists = ref([
     <div
       class="font-semibold text-3xl sm:text-4xl md:text-5xl text-deep-blue mb-5 px-4"
     >
-      <h2>Meet Our <span class="font-bold">Specialists</span></h2>
+      <h2>Meet Our Specialists</h2>
     </div>
 
     <p class="text-primary text-base lg:text-lg leading-relaxed px-4">
-      We use only the best quality materials on the market in order to provide
-      the best products to our patients.
+      We use only the best quality materials on the market in <br />order to
+      provide the best products to our patients.
     </p>
 
     <!-- Carousel -->

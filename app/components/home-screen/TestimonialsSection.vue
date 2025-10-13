@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col text-center justify-center">
+  <div class="flex flex-col text-center justify-center py-20">
     <!-- Title -->
     <div class="font-semibold text-5xl text-deep-blue mb-5">
       <h2>Our Happy Clients</h2>
