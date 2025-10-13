@@ -7,56 +7,43 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { Star } from 'lucide-vue-next';
 
-const specialists = ref([
+const testimonials = ref([
   {
     id: 1,
-    name: 'Jim Carry',
-    specialty: 'Orthodontist',
-    image: '/images/docter1.png',
-    linkedin: '#',
+    name: 'Thomas Daniel',
+    image: '/images/client1.png',
+    rating: 5,
+    text: 'Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.',
   },
   {
     id: 2,
-    name: 'Wade Warren',
-    specialty: 'Endodontist',
-    image: '/images/docter2.png',
-    linkedin: '#',
+    name: 'Alena Alex',
+    image: '/images/client2.png',
+    rating: 5,
+    text: 'Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.',
   },
   {
     id: 3,
-    name: 'Jenny Wilson',
-    specialty: 'Periodontist',
-    image: '/images/docter3.png',
-    linkedin: '#',
+    name: 'Thomas Edison',
+    image: '/images/client3.png',
+    rating: 5,
+    text: 'Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.',
   },
   {
     id: 4,
     name: 'Jacob Jones',
-    specialty: 'Pediatric Dentist',
-    image: '/images/docter4.png',
-    linkedin: '#',
-  },
-  {
-    id: 5,
-    name: 'Jacob Jones',
-    specialty: 'Pediatric Dentist',
-    image: '/images/docter4.png',
-    linkedin: '#',
-  },
-  {
-    id: 6,
-    name: 'Jacob Jones',
-    specialty: 'Pediatric Dentist',
-    image: '/images/docter4.png',
-    linkedin: '#',
+    image: '/images/client4.png',
+    rating: 5,
+    text: 'Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.',
   },
 ]);
 </script>
 
 <template>
   <div
-    class="w-full flex flex-col text-center items-center justify-center py-16 sm:py-20 md:py-24 lg:py-32"
+    class="w-full flex flex-col text-center items-center justify-center py-16 sm:py-20 md:py-24 lg:py-32 bg-white"
   >
     <!-- Title -->
     <div
@@ -65,55 +52,54 @@ const specialists = ref([
       <h2>Our Happy Clients</h2>
     </div>
 
-    <p class="text-primary text-base lg:text-lg leading-relaxed px-4">
-      We use only the best quality materials on the market in order to <br />
+    <p class="text-gray-600 text-base lg:text-lg leading-relaxed px-4 mb-12">
+      We use only the best quality materials on the market in order to
+      <br class="hidden sm:block" />
       provide the best products to our patients.
     </p>
 
     <!-- Carousel -->
-    <div class="mt-12 w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
       <Carousel>
-        <CarouselContent class="-ml-4 mb-5">
+        <CarouselContent class="-ml-3 mb-10">
           <CarouselItem
-            v-for="specialist in specialists"
-            :key="specialist.id"
-            class="pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
+            v-for="testimonial in testimonials"
+            :key="testimonial.id"
+            class="pl-3 md:basis-1/2 lg:basis-1/3"
           >
             <div
-              class="relative rounded-xl overflow-hidden bg-white w-full h-80 sm:h-86 flex flex-col"
+              class="bg-gray-50 rounded-2xl p-6 sm:p-7 flex flex-col h-full border border-gray-100"
             >
-              <!-- Gambar Full -->
-              <div class="relative w-full h-full">
+              <!-- Header: Photo & Name -->
+              <div class="flex items-center gap-4 mb-4">
                 <img
-                  :src="specialist.image"
-                  :alt="specialist.name"
-                  class="w-full h-full object-cover"
+                  :src="testimonial.image"
+                  :alt="testimonial.name"
+                  class="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover flex-shrink-0"
                 />
-                <!-- Tombol LinkedIn -->
-                <a
-                  :href="specialist.linkedin"
-                  target="_blank"
-                  class="absolute top-3 right-3"
-                >
-                  <img
-                    src="/icon/icon-linkedin-specialist.svg"
-                    alt="LinkedIn"
-                    class="w-8 h-8 text-white"
-                  />
-                </a>
+                <div class="text-left flex-1">
+                  <h3
+                    class="text-gray-900 font-semibold text-base sm:text-lg mb-1"
+                  >
+                    {{ testimonial.name }}
+                  </h3>
+                  <!-- Rating Stars -->
+                  <div class="flex gap-0.5">
+                    <Star
+                      v-for="star in testimonial.rating"
+                      :key="star"
+                      class="w-4 h-4 fill-amber-400 text-amber-400"
+                    />
+                  </div>
+                </div>
               </div>
 
-              <!-- Info Dokter -->
-              <div
-                class="absolute left-3 right-3 bottom-3 sm:left-5 sm:right-5 sm:bottom-5 bg-gradient-to-r from-sky-blue to-light-gray text-left p-3 sm:p-4 rounded-lg"
+              <!-- Testimonial Text -->
+              <p
+                class="text-gray-600 text-sm sm:text-base text-left leading-relaxed"
               >
-                <h3 class="text-white font-medium text-base sm:text-lg">
-                  {{ specialist.name }}
-                </h3>
-                <p class="text-gray-200 text-sm sm:text-medium">
-                  {{ specialist.specialty }}
-                </p>
-              </div>
+                {{ testimonial.text }}
+              </p>
             </div>
           </CarouselItem>
         </CarouselContent>
@@ -123,10 +109,10 @@ const specialists = ref([
           class="flex gap-4 absolute -bottom-10 sm:-bottom-8 left-1/2 -translate-x-1/2 px-4 sm:px-14"
         >
           <CarouselPrevious
-            class="inline-flex items-center justify-center w-20 h-10 sm:w-24 sm:h-11 rounded-none bg-white hover:bg-gray-100 text-deep-blue border-none"
+            class="inline-flex items-center justify-center w-20 h-10 sm:w-24 sm:h-11 rounded-none bg-deep-blue hover:bg-gray-400 hover:text-deep-blue text-white border-none"
           />
           <CarouselNext
-            class="inline-flex items-center justify-center w-20 h-10 sm:w-24 sm:h-11 rounded-none bg-white hover:bg-gray-100 text-deep-blue border-none"
+            class="inline-flex items-center justify-center w-20 h-10 sm:w-24 sm:h-11 rounded-none bg-deep-blue hover:bg-gray-400 hover:text-deep-blue text-white border-none"
           />
         </div>
       </Carousel>
