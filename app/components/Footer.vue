@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="px-4 sm:px-6 lg:px-8">
+  <div class="px-4 sm:px-6 lg:px-8 mb-10">
     <!-- Top section with logo and navigation -->
     <div
       class="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0"

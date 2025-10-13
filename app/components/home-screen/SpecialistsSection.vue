@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { Linkedin } from 'lucide-vue-next';
 import {
   Carousel,
   CarouselContent,
@@ -79,7 +78,7 @@ const specialists = ref([
             class="pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
           >
             <div
-              class="relative rounded-xl overflow-hidden bg-white w-full h-[25rem] flex flex-col"
+              class="relative rounded-xl overflow-hidden bg-white w-full h-86 flex flex-col"
             >
               <!-- Gambar Full -->
               <div class="relative w-full h-full">
@@ -89,11 +88,16 @@ const specialists = ref([
                   class="w-full h-full object-cover"
                 />
                 <!-- Tombol LinkedIn -->
-                <a>
-                  :href="specialist.linkedin" target="_blank" class="absolute
-                  top-3 right-3 bg-primary p-1.5 flex items-center
-                  justify-center rounded-md hover:bg-primary/90 transition" >
-                  <Linkedin class="w-5 h-5 text-white" />
+                <a
+                  :href="specialist.linkedin"
+                  target="_blank"
+                  class="absolute top-3 right-3"
+                >
+                  <img
+                    src="/icon/icon-linkedin-specialist.svg"
+                    alt="LinkedIn"
+                    class="w-8 h-8 text-white"
+                  />
                 </a>
               </div>
 
@@ -101,10 +105,10 @@ const specialists = ref([
               <div
                 class="absolute left-5 right-5 bottom-5 bg-gradient-to-r from-sky-blue to-light-gray text-left p-4 rounded-lg"
               >
-                <h3 class="text-white font-regular text-lg">
+                <h3 class="text-white font-medium text-lg">
                   {{ specialist.name }}
                 </h3>
-                <p class="text-gray-200 text-regular">
+                <p class="text-gray-200 text-medium">
                   {{ specialist.specialty }}
                 </p>
               </div>

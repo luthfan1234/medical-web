@@ -17,19 +17,19 @@
         <ul class="space-y-4 text-deep-blue">
           <li class="flex items-center space-x-3">
             <Icon name="lucide:shield-check" class="w-5 h-5 text-bright-blue" />
-            <span>Top quality dental team</span>
+            <span class="font-medium">Top quality dental team</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <Icon name="lucide:shield-check" class="w-5 h-5 text-bright-blue " />
+            <span class="font-medium">State of the art dental services</span>
           </li>
           <li class="flex items-center space-x-3">
             <Icon name="lucide:shield-check" class="w-5 h-5 text-bright-blue" />
-            <span>State of the art dental services</span>
+            <span class="font-medium">Discount on all dental treatment</span>
           </li>
           <li class="flex items-center space-x-3">
             <Icon name="lucide:shield-check" class="w-5 h-5 text-bright-blue" />
-            <span>Discount on all dental treatment</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <Icon name="lucide:shield-check" class="w-5 h-5 text-bright-blue" />
-            <span>Enrollment is quick and easy</span>
+            <span class="font-medium">Enrollment is quick and easy</span>
           </li>
         </ul>
       </div>
