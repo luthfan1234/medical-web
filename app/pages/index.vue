@@ -7,6 +7,7 @@ import CTASection from '~/components/home-screen/CTASection.vue';
 import NavigationBar from '~/components/NavigationBar.vue';
 import SpecialistsSection from '~/components/home-screen/SpecialistsSection.vue';
 import PlaylistSection from '~/components/home-screen/PlaylistSection.vue';
+import TestimonialsSection from '~/components/home-screen/TestimonialsSection.vue';
 </script>
 
 <template>
@@ -24,6 +25,8 @@ import PlaylistSection from '~/components/home-screen/PlaylistSection.vue';
     <SpecialistsSection />
 
     <div class="px-20">
+      <!-- <TestimonialsSection /> -->
+      <TestimonialsSection />
       <Footer />
     </div>
   </div>
