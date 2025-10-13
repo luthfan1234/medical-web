@@ -35,7 +35,7 @@ import ServicesSection from '~/components/home-screen/ServicesSection.vue';
             class="btn rounded-lg outline-2 outline-bright-blue flex-shrink-0"
           >
             <img
-              src="@/assets/icon/icon-phone-home.svg"
+              src="/icon/icon-phone-home.svg"
               alt="Booking"
               class="h-12 w-12 lg:h-14 lg:w-14 p-2"
             />
@@ -60,7 +60,7 @@ import ServicesSection from '~/components/home-screen/ServicesSection.vue';
         <div class="flex items-start justify-between">
           <div class="flex items-center gap-3">
             <img
-              src="@/assets/images/person-thomas.svg"
+              src="/images/person-thomas.svg"
               alt="Thomas Daniel"
               class="w-10 h-10 lg:w-12 lg:h-12 rounded-full object-cover flex-shrink-0"
             />
@@ -72,7 +72,7 @@ import ServicesSection from '~/components/home-screen/ServicesSection.vue';
             </div>
           </div>
           <img
-            src="@/assets/icon/icon-linkedin.svg"
+            src="/icon/icon-linkedin.svg"
             alt="LinkedIn"
             class="w-4 h-4 lg:w-5 lg:h-5 flex-shrink-0"
           />
@@ -90,7 +90,7 @@ import ServicesSection from '~/components/home-screen/ServicesSection.vue';
       class="relative lg:absolute lg:right-0 w-full lg:w-1/2 flex justify-center lg:justify-end items-center mt-8 lg:mt-0"
     >
       <img
-        src="@/assets/images/people.svg"
+        src="/images/people.svg"
         alt="Hero Section"
         class="w-full max-w-md sm:max-w-lg lg:max-w-none lg:w-full lg:h-auto object-contain"
       />

@@ -17,7 +17,7 @@
     <div class="mt-8">
       <img
         class="w-full max-w-4xl mb-10 rounded-lg shadow-lg"
-        src="@/assets/images/specialists-intro.svg"
+        src="/images/specialists-intro.svg"
         alt="Specialists intro image"
       />
       <button

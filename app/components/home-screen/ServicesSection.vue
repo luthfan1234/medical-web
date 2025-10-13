@@ -14,7 +14,7 @@ import CardDescription from '@/components/ui/card/CardDescription.vue';
         >
           <div class="flex justify-center items-center w-16 h-16 mt-4">
             <img
-              src="@/assets/icon/teeth.svg"
+              src="/icon/teeth.svg"
               alt="Tooth Icon"
               class="w-16 h-16"
             />
@@ -42,7 +42,7 @@ import CardDescription from '@/components/ui/card/CardDescription.vue';
         >
           <div class="flex justify-center items-center w-16 h-16 mt-4">
             <img
-              src="@/assets/icon/mouth.svg"
+              src="/icon/mouth.svg"
               alt="Tooth Icon"
               class="w-16 h-16"
             />
@@ -70,7 +70,7 @@ import CardDescription from '@/components/ui/card/CardDescription.vue';
         >
           <div class="flex justify-center items-center w-16 h-16 mt-4">
             <img
-              src="@/assets/icon/implant.svg"
+              src="/icon/implant.svg"
               alt="Tooth Icon"
               class="w-16 h-16"
             />

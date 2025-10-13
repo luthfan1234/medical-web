@@ -6,7 +6,7 @@
       <!-- Logo -->
       <RouterLink to="/">
         <img
-          src="@/assets/images/logo.svg"
+          src="/images/logo.svg"
           class="w-16 h-16 md:w-24 md:h-24 hover:scale-105 transition-transform duration-200"
           alt="todo list logo"
         />

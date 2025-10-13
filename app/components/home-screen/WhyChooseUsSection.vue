@@ -1,11 +1,7 @@
 <template>
   <div class="bg-soft-blue h-[32rem] flex flex-row items-center">
     <!-- Left Image -->
-    <img
-      class="px-28"
-      src="@/assets/images/why-choose-us.png"
-      alt="Why Choose Us "
-    />
+    <img class="px-28" src="/images/why-choose-us.png" alt="Why Choose Us " />
 
     <!-- Right Content -->
     <div class="flex-1">

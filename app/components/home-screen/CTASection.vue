@@ -36,7 +36,7 @@
 
       <!-- Gambar utama -->
       <img
-        src="@/assets/images/cta-images.png"
+        src="/images/cta-images.png"
         alt="Happy patient"
         class="relative w-full h-full object-cover rounded-2xl"
       />
