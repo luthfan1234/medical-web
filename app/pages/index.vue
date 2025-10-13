@@ -8,6 +8,7 @@ import NavigationBar from '~/components/NavigationBar.vue';
 import SpecialistsSection from '~/components/home-screen/SpecialistsSection.vue';
 import PlaylistSection from '~/components/home-screen/PlaylistSection.vue';
 import TestimonialsSection from '~/components/home-screen/TestimonialsSection.vue';
+import ArticleSection from '~/components/home-screen/ArticlesSection.vue';
 </script>
 
 <template>
@@ -27,6 +28,7 @@ import TestimonialsSection from '~/components/home-screen/TestimonialsSection.vu
     <div class="px-20">
       <!-- <TestimonialsSection /> -->
       <TestimonialsSection />
+      <ArticleSection />
       <Footer />
     </div>
   </div>
