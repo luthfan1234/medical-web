@@ -99,12 +99,14 @@ const specialists = ref([
 
               <!-- Info Dokter -->
               <div
-                class="absolute left-5 right-5 bottom-5 bg-gradient-to-br from-sky-blue to-light-gray text-left p-4 rounded-lg"
+                class="absolute left-5 right-5 bottom-5 bg-gradient-to-r from-sky-blue to-light-gray text-left p-4 rounded-lg"
               >
-                <h3 class="text-white font-semibold text-lg">
+                <h3 class="text-white font-regular text-lg">
                   {{ specialist.name }}
                 </h3>
-                <p class="text-gray-200 text-sm">{{ specialist.specialty }}</p>
+                <p class="text-gray-200 text-regular">
+                  {{ specialist.specialty }}
+                </p>
               </div>
             </div>
           </CarouselItem>
