@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/test-utils',
     'shadcn-nuxt',
+    'nuxt-lucide-icons',
   ],
 
   css: ['~/assets/css/tailwind.css'],
