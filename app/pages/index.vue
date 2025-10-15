@@ -4,7 +4,7 @@ import HeroSection from '~/components/home-screen/HeroSection.vue';
 import WelcomeSection from '~/components/home-screen/WelcomeSection.vue';
 import WhyChooseUsSection from '~/components/home-screen/WhyChooseUsSection.vue';
 import CTASection from '~/components/home-screen/CTASection.vue';
-import NavigationBar from '~/components/NavigationBar.vue';
+import NavigationBarBlue from '~/components/NavigationBarBlue.vue';
 import SpecialistsSection from '~/components/home-screen/SpecialistsSection.vue';
 import PlaylistSection from '~/components/home-screen/PlaylistSection.vue';
 import TestimonialsSection from '~/components/home-screen/TestimonialsSection.vue';
@@ -16,7 +16,7 @@ import PromoSection from '~/components/home-screen/PromoSection.vue';
 <template>
   <div>
     <div class="px-20 py-10 font-sans">
-      <NavigationBar />
+      <NavigationBarBlue />
       <HeroSection />
       <WelcomeSection />
       <WhyChooseUsSection />
