@@ -17,21 +17,41 @@
       <div
         class="flex flex-wrap items-center justify-center sm:justify-end text-deep-blue gap-2 sm:gap-4 lg:gap-8"
       >
-        <RouterLink to="/create" class="btn btn-primary text-sm sm:text-base"
-          >Home</RouterLink
+        <RouterLink
+          to="/"
+          class="btn btn-primary hover:font-semibold transition-all duration-200"
+          :class="{ 'font-semibold': $route.path === '/' }"
         >
-        <RouterLink to="/create" class="btn btn-primary text-sm sm:text-base"
-          >Services</RouterLink
+          Home
+        </RouterLink>
+        <RouterLink
+          to="/services"
+          class="btn btn-primary hover:font-semibold transition-all duration-200"
+          :class="{ 'font-semibold': $route.path === '/services' }"
         >
-        <RouterLink to="/create" class="btn btn-primary text-sm sm:text-base"
-          >Blogs</RouterLink
+          Services
+        </RouterLink>
+        <RouterLink
+          to="/blogs"
+          class="btn btn-primary hover:font-semibold transition-all duration-200"
+          :class="{ 'font-semibold': $route.path === '/blogs' }"
         >
-        <RouterLink to="/create" class="btn btn-primary text-sm sm:text-base"
-          >About</RouterLink
+          Blogs
+        </RouterLink>
+        <RouterLink
+          to="/about"
+          class="btn btn-primary hover:font-semibold transition-all duration-200"
+          :class="{ 'font-semibold': $route.path === '/about' }"
         >
-        <RouterLink to="/create" class="btn btn-primary text-sm sm:text-base"
-          >Contact</RouterLink
+          About
+        </RouterLink>
+        <RouterLink
+          to="/contact"
+          class="btn btn-primary hover:font-semibold transition-all duration-200"
+          :class="{ 'font-semibold': $route.path === '/contact' }"
         >
+          Contact
+        </RouterLink>
       </div>
     </div>
 
@@ -91,3 +111,9 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useRoute } from 'vue-router';
+
+const $route = useRoute();
+</script>

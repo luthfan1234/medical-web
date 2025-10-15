@@ -17,35 +17,35 @@
         <RouterLink
           to="/"
           class="btn btn-primary hover:font-semibold transition-all duration-200"
-          :class="{ 'font-semibold': isActiveRoute('/') }"
+          :class="{ 'font-semibold': $route.path === '/' }"
         >
           Home
         </RouterLink>
         <RouterLink
           to="/services"
           class="btn btn-primary hover:font-semibold transition-all duration-200"
-          :class="{ 'font-semibold': isActiveRoute('services') }"
+          :class="{ 'font-semibold': $route.path === '/services' }"
         >
           Services
         </RouterLink>
         <RouterLink
           to="/blogs"
           class="btn btn-primary hover:font-semibold transition-all duration-200"
-          :class="{ 'font-semibold': isActiveRoute('blogs') }"
+          :class="{ 'font-semibold': $route.path === '/blogs' }"
         >
           Blogs
         </RouterLink>
         <RouterLink
           to="/about"
           class="btn btn-primary hover:font-semibold transition-all duration-200"
-          :class="{ 'font-semibold': isActiveRoute('about') }"
+          :class="{ 'font-semibold': $route.path === '/about' }"
         >
           About
         </RouterLink>
         <RouterLink
           to="/contact"
           class="btn btn-primary hover:font-semibold transition-all duration-200"
-          :class="{ 'font-semibold': isActiveRoute('contact') }"
+          :class="{ 'font-semibold': $route.path === '/contact' }"
         >
           Contact
         </RouterLink>
@@ -106,7 +106,7 @@
             to="/"
             class="btn btn-primary text-left hover:pl-4 hover:font-semibold transition-all duration-200"
             @click="closeMobileMenu"
-            :class="{ 'font-semibold': isActiveRoute('/') }"
+            :class="{ 'font-semibold': $route.path === '/' }"
           >
             Home
           </RouterLink>
@@ -114,7 +114,7 @@
             to="/services"
             class="btn btn-primary text-left hover:pl-4 hover:font-semibold transition-all duration-200"
             @click="closeMobileMenu"
-            :class="{ 'font-semibold': isActiveRoute('services') }"
+            :class="{ 'font-semibold': $route.path === '/services' }"
           >
             Services
           </RouterLink>
@@ -122,7 +122,7 @@
             to="/blogs"
             class="btn btn-primary text-left hover:pl-4 hover:font-semibold transition-all duration-200"
             @click="closeMobileMenu"
-            :class="{ 'font-semibold': isActiveRoute('blogs') }"
+            :class="{ 'font-semibold': $route.path === '/blogs' }"
           >
             Blogs
           </RouterLink>
@@ -130,7 +130,7 @@
             to="/about"
             class="btn btn-primary text-left hover:pl-4 hover:font-semibold transition-all duration-200"
             @click="closeMobileMenu"
-            :class="{ 'font-semibold': isActiveRoute('about') }"
+            :class="{ 'font-semibold': $route.path === '/about' }"
           >
             About
           </RouterLink>
@@ -138,7 +138,7 @@
             to="/contact"
             class="btn btn-primary text-left hover:pl-4 hover:font-semibold transition-all duration-200"
             @click="closeMobileMenu"
-            :class="{ 'font-semibold': isActiveRoute('contact') }"
+            :class="{ 'font-semibold': $route.path === '/contact' }"
           >
             Contact
           </RouterLink>
@@ -170,14 +170,12 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute();
+import { ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
+
+const $route = useRoute();
 
 const isMobileMenuOpen = ref(false);
-
-const isActiveRoute = (path: string): boolean => {
-  const currentPath = route.path === '/' ? '' : route.path.slice(1);
-  return currentPath === path;
-};
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
@@ -189,7 +187,7 @@ const closeMobileMenu = () => {
 
 // Close mobile menu when route changes
 watch(
-  () => useRoute().path,
+  () => $route.path,
   () => {
     closeMobileMenu();
   }
