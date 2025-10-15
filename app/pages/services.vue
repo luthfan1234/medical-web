@@ -5,6 +5,9 @@ import ServiceHeroSection from '~/components/services-screen/ServiceHeroSection.
 import ServicesPageSection from '~/components/services-screen/ServicesPageSection.vue';
 import ServiceAppointmentSection from '~/components/services-screen/ServiceAppointmentSection.vue';
 import ServicePlaylistSection from '~/components/services-screen/ServicePlaylistSection.vue';
+import ServiceSpecialistsSection from '~/components/services-screen/ServiceSpecialistsSection.vue';
+import ServiceFAQSection from '~/components/services-screen/ServiceFAQSection.vue';
+import ServicePromoSection from '~/components/services-screen/ServicePromoSection.vue';
 </script>
 
 <template>
@@ -19,6 +22,13 @@ import ServicePlaylistSection from '~/components/services-screen/ServicePlaylist
 
     <div class="px-20">
       <ServicePlaylistSection />
+    </div>
+
+    <ServiceSpecialistsSection />
+
+    <div class="px-20">
+      <ServiceFAQSection />
+      <ServicePromoSection />
       <Footer />
     </div>
   </div>

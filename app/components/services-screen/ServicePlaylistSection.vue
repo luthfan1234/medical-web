@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex flex-col items-center justify-center text-center px-4 sm:px-8 py-20 sm:py-24 md:py-32"
+    class="w-full flex flex-col items-center justify-center text-center px-4 sm:px-8 mt-20"
   >
     <div
       class="font-semibold text-3xl sm:text-4xl md:text-5xl text-deep-blue mb-5"
