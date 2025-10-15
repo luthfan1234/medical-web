@@ -34,16 +34,12 @@
       </div>
     </div>
 
-    <!-- Right image -->
     <div
       class="relative w-full max-w-md lg:max-w-lg h-auto lg:w-[26rem] lg:h-[22.5rem]"
     >
-      <!-- Background biru -->
       <div
         class="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 w-full h-full bg-gradient-to-r from-soft-blue to-sky-blue rounded-2xl"
       ></div>
-
-      <!-- Gambar utama -->
       <img
         src="/images/home/cta-images.png"
         alt="Happy patient"
