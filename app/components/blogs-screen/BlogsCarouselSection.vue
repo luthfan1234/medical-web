@@ -15,7 +15,7 @@ const blogs = ref([
     writer: '~Anita Jackson',
     title: 'Care of your Teeth',
     description: ' Lorem ipsum dolor sit amet consectetur.',
-    image: '/images/article/article6.png',
+    image: '/images/article/article1.png',
     link: '#',
   },
   {
@@ -24,7 +24,7 @@ const blogs = ref([
     writer: '~Anita Jackson',
     title: 'Care of your Teeth',
     description: ' Lorem ipsum dolor sit amet consectetur.',
-    image: '/images/article/article6.png',
+    image: '/images/article/article2.png',
     link: '#',
   },
   {
@@ -33,7 +33,7 @@ const blogs = ref([
     writer: '~Anita Jackson',
     title: 'Care of your Teeth',
     description: ' Lorem ipsum dolor sit amet consectetur.',
-    image: '/images/article/article6.png',
+    image: '/images/article/article3.png',
     link: '#',
   },
   {
@@ -42,7 +42,7 @@ const blogs = ref([
     title: 'Care of your Teeth',
     writer: '~Anita Jackson',
     description: ' Lorem ipsum dolor sit amet consectetur.',
-    image: '/images/article/article6.png',
+    image: '/images/article/article4.png',
     link: '#',
   },
   {
@@ -51,7 +51,7 @@ const blogs = ref([
     title: 'Care of your Teeth',
     writer: '~Anita Jackson',
     description: ' Lorem ipsum dolor sit amet consectetur.',
-    image: '/images/article/article6.png',
+    image: '/images/article/article5.png',
     link: '#',
   },
   {
@@ -67,17 +67,17 @@ const blogs = ref([
 </script>
 
 <template>
-  <div class="w-full flex flex-col">
+  <div class="w-full ">
     <div class="">
       <Carousel>
-        <CarouselContent class="-ml-3 bg">
+        <CarouselContent class="-ml-3 mb-10">
           <CarouselItem
             v-for="blog in blogs"
             :key="blog.id"
             class="pl-3 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
           >
             <div
-              class="relative rounded-xl overflow-hidden bg-soft-blue w-full h-[31rem] flex flex-col px-5 py-6"
+              class="relative rounded-xl overflow-hidden bg-soft-blue w-full h-[29rem] flex flex-col px-5 py-6"
             >
               <div class="">
                 <img
@@ -86,7 +86,7 @@ const blogs = ref([
                   class="w-full h-full object-cover"
                 />
               </div>
-              <div class="flex justify-between items-center">
+              <div class="flex justify-between items-center mt-8">
                 <button
                   class="w-24 h-9 bg-deep-blue text-white rounded-lg items-start"
                 >
@@ -96,10 +96,12 @@ const blogs = ref([
               </div>
 
               <div>
-                <CardTitle class="font-medium text-deep-blue text-lg text-left">
+                <CardTitle
+                  class="font-medium text-deep-blue text-lg text-left mt-3"
+                >
                   {{ blog.title }}
                 </CardTitle>
-                <CardDescription class="text-gray-600 text-sm text-left">
+                <CardDescription class="text-gray-600 text-sm text-left mt-2.5">
                   {{ blog.description }}
                 </CardDescription>
               </div>
