@@ -12,7 +12,7 @@ import ServicePromoSection from '~/components/services-screen/ServicePromoSectio
 
 <template>
   <div>
-    <div class="px-20 py-10 font-sans bg-soft-blue">
+    <div class="px-20 py-10 font-sans bg-gradient-to-b from-soft-blue to-white">
       <NavigationBarWhite />
       <ServiceHeroSection />
       <ServicesPageSection />

@@ -5,7 +5,7 @@ import BlogsHeroSection from '~/components/blogs-screen/BlogsHeroSection.vue';
 </script>
 
 <template>
-  <div class="px-20 py-10 font-sans bg-soft-blue">
+  <div class="px-20 py-10 font-sans bg-gradient-to-b from-soft-blue to-white">
     <NavigationBarWhite />
     <BlogsHeroSection />
     <BlogsCarouselSection />

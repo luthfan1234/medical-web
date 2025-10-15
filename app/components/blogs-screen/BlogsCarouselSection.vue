@@ -62,9 +62,8 @@ const blogs = ref([
 
 <template>
   <div
-    class="w-full flex flex-col text-center items-center justify-center bg-soft-blue py-16 sm:py-20 md:py-24 lg:py-32"
+    class="w-full flex flex-col text-center items-center justify-center bg-soft-blue"
   >
-    <!-- Carousel -->
     <div class="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
       <Carousel>
         <CarouselContent class="-ml-3 mb-10">
