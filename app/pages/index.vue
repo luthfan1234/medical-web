@@ -10,6 +10,7 @@ import PlaylistSection from '~/components/home-screen/PlaylistSection.vue';
 import TestimonialsSection from '~/components/home-screen/TestimonialsSection.vue';
 import ArticleSection from '~/components/home-screen/ArticlesSection.vue';
 import FAQSection from '~/components/home-screen/FAQSection.vue';
+import PromoSection from '~/components/home-screen/PromoSection.vue';
 </script>
 
 <template>
@@ -31,6 +32,7 @@ import FAQSection from '~/components/home-screen/FAQSection.vue';
       <TestimonialsSection />
       <ArticleSection />
       <FAQSection />
+      <PromoSection />
       <Footer />
     </div>
   </div>

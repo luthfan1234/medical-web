@@ -1,7 +1,11 @@
 <template>
   <div class="bg-soft-blue h-[32rem] flex flex-row items-center">
     <!-- Left Image -->
-    <img class="px-28" src="/images/why-choose-us.png" alt="Why Choose Us " />
+    <img
+      class="px-28"
+      src="/images/home/why-choose-us.png"
+      alt="Why Choose Us "
+    />
 
     <!-- Right Content -->
     <div class="flex-1">
@@ -20,7 +24,7 @@
             <span class="font-medium">Top quality dental team</span>
           </li>
           <li class="flex items-center space-x-3">
-            <Icon name="lucide:shield-check" class="w-5 h-5 text-bright-blue " />
+            <Icon name="lucide:shield-check" class="w-5 h-5 text-bright-blue" />
             <span class="font-medium">State of the art dental services</span>
           </li>
           <li class="flex items-center space-x-3">

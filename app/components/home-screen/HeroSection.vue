@@ -23,15 +23,21 @@ import ServicesSection from '~/components/home-screen/ServicesSection.vue';
       </p>
 
       <!-- Buttons Section -->
-      <div class="flex flex-col sm:flex-row items-center justify-start space-y-4 sm:space-y-0 sm:space-x-6 mb-8 lg:mb-12">
+      <div
+        class="flex flex-col sm:flex-row items-center justify-start space-y-4 sm:space-y-0 sm:space-x-6 mb-8 lg:mb-12"
+      >
         <button
           class="w-full sm:w-auto btn btn-primary px-5 py-3 md:px-6 lg:px-7 md:py-4 bg-bright-blue text-white rounded-lg font-semibold hover:bg-deep-blue hover:text-white"
         >
           Book an appointment
         </button>
 
-        <div class="flex flex-row space-x-4 xs:flex-row items-center xs:space-x-3.5">
-          <button class="btn rounded-lg outline-2 outline-bright-blue flex flex-shrink-0">
+        <div
+          class="flex flex-row space-x-4 xs:flex-row items-center xs:space-x-3.5"
+        >
+          <button
+            class="btn rounded-lg outline-2 outline-bright-blue flex flex-shrink-0"
+          >
             <img
               src="/icon/icon-phone-home.svg"
               alt="Booking"
@@ -39,7 +45,9 @@ import ServicesSection from '~/components/home-screen/ServicesSection.vue';
             />
           </button>
           <div class="text-left">
-            <p class="text-bright-blue font-semibold leading-tight mb-1 text-sm md:text-base">
+            <p
+              class="text-bright-blue font-semibold leading-tight mb-1 text-sm md:text-base"
+            >
               Dental 24H Emergency
             </p>
             <p class="text-primary text-xs md:text-sm font-medium">
@@ -56,7 +64,7 @@ import ServicesSection from '~/components/home-screen/ServicesSection.vue';
         <div class="flex items-start justify-between">
           <div class="flex items-center gap-3">
             <img
-              src="/images/person-thomas.svg"
+              src="/images/home/person-thomas.svg"
               alt="Thomas Daniel"
               class="w-10 h-10 lg:w-12 lg:h-12 rounded-full object-cover flex-shrink-0"
             />
@@ -86,7 +94,7 @@ import ServicesSection from '~/components/home-screen/ServicesSection.vue';
       class="relative lg:absolute lg:right-0 w-full lg:w-1/2 flex justify-center lg:justify-end items-center mt-8 sm:mt-12 lg:mt-0"
     >
       <img
-        src="/images/people.svg"
+        src="/images/home/people.svg"
         alt="Hero Section"
         class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full object-contain"
       />

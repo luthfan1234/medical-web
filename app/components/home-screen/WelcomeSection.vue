@@ -53,7 +53,7 @@
 
       <!-- Gambar utama -->
       <img
-        src="/images/patient.png"
+        src="/images/home/patient.png"
         alt="Happy patient"
         class="relative w-full h-full object-cover rounded-2xl"
       />

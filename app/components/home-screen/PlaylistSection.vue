@@ -18,7 +18,7 @@
     <div class="mt-8 w-full flex flex-col items-center">
       <img
         class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl mb-10 rounded-lg shadow-lg"
-        src="/images/specialists-intro.svg"
+        src="/images/home/specialists-intro.svg"
         alt="Specialists intro image"
       />
       <button

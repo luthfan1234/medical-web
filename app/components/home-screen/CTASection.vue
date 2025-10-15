@@ -3,7 +3,9 @@
     class="px-4 sm:px-8 md:px-12 lg:px-20 py-16 sm:py-20 md:py-24 lg:py-36 flex flex-col lg:flex-row items-center gap-12 lg:gap-16"
   >
     <!-- Left content -->
-    <div class="flex-1 flex flex-col text-center lg:text-left items-center lg:items-start">
+    <div
+      class="flex-1 flex flex-col text-center lg:text-left items-center lg:items-start"
+    >
       <div
         class="font-semibold text-3xl sm:text-4xl md:text-5xl text-deep-blue mb-2"
       >
@@ -33,7 +35,9 @@
     </div>
 
     <!-- Right image -->
-    <div class="relative w-full max-w-md lg:max-w-lg h-auto lg:w-[26rem] lg:h-[22.5rem]">
+    <div
+      class="relative w-full max-w-md lg:max-w-lg h-auto lg:w-[26rem] lg:h-[22.5rem]"
+    >
       <!-- Background biru -->
       <div
         class="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 w-full h-full bg-gradient-to-r from-soft-blue to-sky-blue rounded-2xl"
@@ -41,7 +45,7 @@
 
       <!-- Gambar utama -->
       <img
-        src="/images/cta-images.png"
+        src="/images/home/cta-images.png"
         alt="Happy patient"
         class="relative w-full h-full object-cover rounded-2xl"
       />
