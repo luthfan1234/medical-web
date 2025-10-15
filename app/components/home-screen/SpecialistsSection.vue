@@ -83,15 +83,12 @@ const specialists = ref([
             <div
               class="relative rounded-xl overflow-hidden bg-white w-full h-82 flex flex-col"
             >
-              <!-- Gambar Full -->
               <div class="relative w-full h-full">
                 <img
                   :src="specialist.image"
                   :alt="specialist.name"
                   class="w-full h-full object-cover"
                 />
-                <!-- Tombol LinkedIn -->
-
                 <a
                   :href="specialist.linkedin"
                   target="_blank"
@@ -105,7 +102,6 @@ const specialists = ref([
                 </a>
               </div>
 
-              <!-- Info Dokter -->
               <div
                 class="absolute left-3 right-3 bottom-3 sm:left-5 sm:right-5 sm:bottom-5 bg-gradient-to-r from-sky-blue to-light-gray text-left p-3 sm:p-4 rounded-lg"
               >
@@ -120,7 +116,6 @@ const specialists = ref([
           </CarouselItem>
         </CarouselContent>
 
-        <!-- Tombol navigasi -->
         <div
           class="flex gap-4 absolute -bottom-10 sm:-bottom-8 left-1/2 -translate-x-1/2 px-4 sm:px-14"
         >
