@@ -3,6 +3,7 @@ import NavigationBarWhite from '~/components/NavigationBarWhite.vue';
 import Footer from '~/components/Footer.vue';
 import HeroServiceSection from '~/components/services-screen/HeroServiceSection.vue';
 import ServicesPageSection from '~/components/services-screen/ServicesPageSection.vue';
+import AppointmentSection from '~/components/services-screen/AppointmentSection.vue';
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import ServicesPageSection from '~/components/services-screen/ServicesPageSectio
     <NavigationBarWhite />
     <HeroServiceSection />
     <ServicesPageSection />
+    <AppointmentSection />
     <Footer />
   </div>
 </template>

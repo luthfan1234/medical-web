@@ -94,6 +94,7 @@
   --color-bright-blue: var(--bright-blue);
   --color-sky-blue: var(--sky-blue);
   --color-sky-blue-alpha: var(--sky-blue-alpha);
+  --color-slate-blue: var(--slate-blue);
   --color-light-gray: var(--light-gray);
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
@@ -157,6 +158,7 @@
   --bright-blue: #1376f8;
   --sky-blue: #25b4f8;
   --sky-blue-alpha: #25b4f84d;
+  --slate-blue: #3c4959;
   --light-gray: #cccfd0;
   --font-general: 'GeneralSans', sans-serif;
 }
