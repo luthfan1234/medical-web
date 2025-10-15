@@ -13,7 +13,7 @@
       provide the best products to our patients.
     </p>
 
-    <div class="w-full max-w-2xl space-y-4">
+    <div class="w-full max-w-2xl space-y-4 px-4">
       <div
         v-for="(faq, index) in faqs"
         :key="index"
@@ -47,6 +47,8 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+
 interface FAQ {
   question: string;
   answer: string;
