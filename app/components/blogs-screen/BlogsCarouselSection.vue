@@ -67,7 +67,7 @@ const blogs = ref([
     <!-- Carousel -->
     <div class="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
       <Carousel>
-        <CarouselContent class="-ml-3 mb-10">
+        <CarouselContent class="-ml-3 mb-18">
           <CarouselItem
             v-for="blog in blogs"
             :key="blog.id"
