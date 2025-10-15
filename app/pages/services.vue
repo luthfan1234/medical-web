@@ -7,11 +7,17 @@ import AppointmentSection from '~/components/services-screen/AppointmentSection.
 </script>
 
 <template>
-  <div class="px-20 py-10 font-sans bg-soft-blue">
-    <NavigationBarWhite />
-    <HeroServiceSection />
-    <ServicesPageSection />
+  <div>
+    <div class="px-20 py-10 font-sans bg-soft-blue">
+      <NavigationBarWhite />
+      <HeroServiceSection />
+      <ServicesPageSection />
+    </div>
+
     <AppointmentSection />
-    <Footer />
+    
+    <div class="px-20">
+      <Footer />
+    </div>
   </div>
 </template>
