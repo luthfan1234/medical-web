@@ -3,7 +3,7 @@
     class="w-full flex flex-col text-center items-center justify-center py-5 sm:py-5 md:py-5 lg:py-5 bg-white"
   >
     <h2
-      class="font-semibold text-3xl sm:text-4xl md:text-5xl text-deep-blue mb-5 px-4"
+      class="font-semibold text-3xl sm:text-4xl md:text-5xl text-deep-blue mb-5 px-4 mt-16"
     >
       Frequently Ask Question
     </h2>
