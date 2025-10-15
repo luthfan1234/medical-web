@@ -23,19 +23,14 @@
       <div
         class="flex items-center w-full max-w-md mt-10 rounded-lg overflow-hidden border border-gray-300 bg-white"
       >
-        <!-- Ikon telepon -->
         <div class="flex items-center justify-center pl-4">
           <Icon name="lucide:phone" class="w-4 h-4 text-muted-foreground" />
         </div>
-
-        <!-- Input -->
         <input
           type="text"
           placeholder="Enter your Phone Number"
           class="flex-grow px-3 py-3 text-muted-foreground placeholder-muted-foreground focus:outline-none"
         />
-
-        <!-- Tombol Submit -->
         <button
           class="bg-bright-blue text-white font-semibold px-5 py-3 hover:bg-deep-blue transition-all duration-200"
         >
@@ -43,15 +38,10 @@
         </button>
       </div>
     </div>
-
-    <!-- Right image -->
     <div class="relative w-[26rem] h-[22.5rem]">
-      <!-- Background biru -->
       <div
         class="absolute bottom-6 left-6 w-full h-full bg-gradient-to-r from-soft-blue to-sky-blue rounded-2xl"
       ></div>
-
-      <!-- Gambar utama -->
       <img
         src="/images/home/patient.png"
         alt="Happy patient"

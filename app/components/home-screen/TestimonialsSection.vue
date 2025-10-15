@@ -104,7 +104,6 @@ const testimonials = ref([
           </CarouselItem>
         </CarouselContent>
 
-        <!-- Tombol navigasi -->
         <div
           class="flex gap-4 absolute -bottom-10 sm:-bottom-8 left-1/2 -translate-x-1/2 px-4 sm:px-14"
         >
