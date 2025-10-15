@@ -4,7 +4,7 @@
     <div class="flex-1 flex flex-col">
       <div class="font-semibold text-5xl text-deep-blue text-left mb-2">
         <h2>
-          We're welcoming new <br />patients and can't wait <br />
+          We're welcoming new <br /> patients and can't wait <br />
           to meet you.
         </h2>
       </div>
